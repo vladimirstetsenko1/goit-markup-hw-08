@@ -1,0 +1,39 @@
+.user {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-bg-color);
+  &__galery {
+    @include font($fz: 36px, $fw: bold, $ls: 0.03em, $lh: 1.16);
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    margin-left: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--primary-bg-color);
+  }
+  &__head {
+    padding-top: 30px;
+  }
+  &__headline {
+    @include font($fz: 16px, $fw: 500, $ls: 0.03em, $lh: 1.19);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__tagline {
+    @include font($fz: 16px, $fw: normal, $ls: 0.03em, $lh: 1.19);
+    text-align: center;
+    color: var(--secondory-text-color);
+  }
+}
+
+.user__item:nth-last-child(4n) {
+  margin-left: 0;
+}

@@ -1,0 +1,35 @@
+.work {
+  padding-bottom: 94px;
+  &__title {
+    @include font($fz: 36px, $fw: bold, $ls: 0.03em, $lh: 1.17);
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-text-color);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__apps {
+    position: relative;
+  }
+  &__apps::before {
+    position: absolute;
+    content: "";
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    background-color: var(--feature-bg-color);
+  }
+  &__apps-text {
+    position: absolute;
+    bottom: -8%;
+    right: 15%;
+    width: 270px;
+    height: 70px;
+    @include font($fz: 14px, $fw: bold, $ls: 0.03em, $lh: 1.14);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-title-color);
+  }
+}

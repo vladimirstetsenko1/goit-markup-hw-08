@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+}
+
+.footer-menu {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--footer-bg-color);
+}
+
+.footer__address {
+  @include font($fz: 14px, $fw: normal, $ls: 0.03em, $lh: 1.71);
+  font-style: normal;
+  color: var(--secondary-social-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &-list {
+    margin-right: 70px;
+  }
+  &-item {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__contact {
+  @include font($fz: 14px, $fw: normal, $ls: 0.03em, $lh: 1.71);
+  margin-bottom: 60px;
+  font-style: normal;
+  color: var(--first-social-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__address-list .footer__address:focus,
+.footer__address-list .footer__address:hover {
+  color: var(--accent-color);
+}
+
+.footer__address-list .footer__contact:focus,
+.footer__address-list .footer__contact:hover {
+  color: var(--accent-color);
+}

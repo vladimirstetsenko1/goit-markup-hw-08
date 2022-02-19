@@ -1,0 +1,45 @@
+.aside {
+  display: block;
+  padding-top: 12px;
+  margin-right: 93px;
+  &__title {
+    @include font($fz: 14px, $fw: bold, $ls: 0.03em, $lh: 1.14);
+    text-transform: uppercase;
+    color: var(--text-title-color);
+  }
+}
+
+.aside-list {
+  display: flex;
+  padding-top: 16px;
+  &__icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    fill: var(--secondary-social-color);
+    background-color: var(--footer-social-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.aside-list__item + .aside-list__item {
+  margin-left: 10px;
+}
+
+.aside-list__link:hover,
+.aside-list__link:focus {
+  background-color: var(--background-social-color);
+}
+
+.aside-list__link:hover .aside-list__icon,
+.aside-list__link:focus .aside-list__icon {
+  fill: var(--secondary-social-color);
+}

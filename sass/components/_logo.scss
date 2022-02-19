@@ -1,0 +1,21 @@
+.nav__logo {
+  @include font($fz: 26px, $fw: null, $ls: 0.03em, $lh: 1.19);
+  font-family: Raleway;
+  color: var(--accent-color);
+}
+
+.nav__logos {
+  color: var(--primary-text-color);
+}
+
+.footer__logo {
+  @include font($fz: 26px, $fw: bold, $ls: 0.03em, $lh: 1.19);
+  display: inline-block;
+  margin-bottom: 20px;
+  font-family: Raleway;
+  color: var(--accent-color);
+}
+
+.footer__logos {
+  color: var(--secondary-social-color);
+}
