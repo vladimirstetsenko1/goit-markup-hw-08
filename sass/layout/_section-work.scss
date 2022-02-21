@@ -1,4 +1,8 @@
 .work {
+  @media screen and (max-width: 1200px) {
+    // width: 768px;
+    display: none;
+  }
   padding-bottom: 94px;
   &__title {
     @include font($fz: 36px, $fw: bold, $ls: 0.03em, $lh: 1.17);

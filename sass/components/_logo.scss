@@ -1,7 +1,12 @@
 .nav__logo {
-  @include font($fz: 26px, $fw: null, $ls: 0.03em, $lh: 1.19);
+  @include font($fz: 24px, $fw: bold, $ls: 0.03em, $lh: 1.17);
   font-family: Raleway;
+  margin: auto;
   color: var(--accent-color);
+
+  @include tab {
+    @include font($fz: 26px, $fw: bold, $ls: 0.03em, $lh: 1.19);
+  }
 }
 
 .nav__logos {
@@ -9,11 +14,14 @@
 }
 
 .footer__logo {
-  @include font($fz: 26px, $fw: bold, $ls: 0.03em, $lh: 1.19);
+  @include font($fz: 24px, $fw: bold, $ls: 0.03em, $lh: 1.17);
   display: inline-block;
   margin-bottom: 20px;
   font-family: Raleway;
   color: var(--accent-color);
+  @include tab {
+    @include font($fz: 26px, $fw: bold, $ls: 0.03em, $lh: 1.19);
+  }
 }
 
 .footer__logos {
