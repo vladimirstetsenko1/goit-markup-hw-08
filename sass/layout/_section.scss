@@ -14,33 +14,21 @@
 .feature-list {
   display: flex;
   flex-wrap: wrap;
-
-  @include tab {
-    margin: -15px;
-  }
-  // @media screen and (min-width: 1200px) {
-  // max-width: -15px;
-  // }
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .feature-list__item {
-  // width: 270px;
-  // width: 450px;
-  width: calc((100% - 1 * 30px) / 1);
-  // height: 226px;
+  width: calc(100% / 1 - 30px);
+
+  margin-left: 30px;
   margin-bottom: 30px;
 
   @include tab {
-    // width: 354px;
-    width: calc((100% - 2 * 30px) / 2);
-    // height: 251px;
-    margin: 15px;
+    width: calc(100% / 2 - 30px);
   }
   @include desk {
-    // width: 250px;
-    width: calc((100% - 4 * 30px) / 4);
-    // height: 251px;
-    // margin: 5px;
+    width: calc(100% / 4 - 30px);
   }
 }
 
@@ -48,20 +36,13 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  // width: 270px;
-  width: 450px;
+
+  width: 100%;
   height: 120px;
   background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
   margin-bottom: 30px;
   border-radius: 4px;
-
-  @include tab {
-    width: 354px;
-  }
-  @include desk {
-    width: 250px;
-  }
 }
 
 .feature-list__item-icon {
